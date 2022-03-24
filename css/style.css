@@ -1,0 +1,534 @@
+/*подключаю шрифт*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900 displai&swap");
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/*==================================================================================================*/
+/*=============================домашняя работа №1===================================================*/
+.wraper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/*========================================header================================================*/
+
+.header {
+	margin: 0px 0px 20px 0px;
+}
+.header *:last-child {
+	margin-bottom: 0px;
+}
+.header__fixed {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 20px;
+	color: beige;
+	background-color: rgba(45, 0, 209, 0.678);
+	border: 3px solid rgb(196, 0, 196);
+	position: fixed;
+}
+.header__link:hover {
+	color: rgb(135, 145, 119);
+	text-decoration: underline;
+}
+.header__block {
+	height: 100px;
+	background-color: rgb(158, 158, 158);
+	color: #fff;
+	padding: 50px 0px 0px 0px;
+}
+/*=========================================================position: static;============================================================================*/
+
+.main {
+	margin: 0px 0px 20px 0px;
+}
+.main *:last-child {
+	margin-bottom: 0px;
+}
+
+.static-main {
+	margin: 0px 0px 10px 0px;
+}
+.static-main *:last-child {
+	margin-bottom: 0px;
+}
+.static-main__text {
+	color: rgb(17, 146, 0);
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+	margin: 0px 0px 20px 0px;
+}
+.static-main__images {
+}
+.images-static {
+}
+.images-static__one {
+	background-color: rgba(0, 225, 255, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: static;
+}
+.images-static__image1 {
+	width: 100px;
+	height: 100px;
+}
+.images-static__two {
+	background-color: rgba(0, 255, 55, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: static;
+}
+.images-static__image2 {
+	width: 100px;
+	height: 100px;
+}
+.images-static__thre {
+	background-color: rgba(255, 251, 0, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: static;
+}
+.images-static__image3 {
+	width: 100px;
+	height: 100px;
+}
+.images-static__four {
+	background-color: rgba(255, 0, 128, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: static;
+}
+.images-static__image4 {
+	width: 100px;
+	height: 100px;
+}
+/*====================================================================position:reletive;==================================================================*/
+.reletive-main {
+	margin: 0px 0px 10px 0px;
+}
+.reletive-main *:last-child {
+	margin-bottom: 0px;
+}
+.reletive-main__text {
+	color: rgb(17, 146, 0);
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+	margin: 0px 0px 20px 0px;
+}
+.reletive-main__images {
+}
+.images-reletive {
+}
+.images-reletive__one {
+	background-color: rgba(0, 225, 255, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+.images-reletive__image1 {
+	width: 100px;
+	height: 100px;
+}
+.images-reletive__two {
+	background-color: rgba(0, 255, 55, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+}
+.images-reletive__image2 {
+	width: 100px;
+	height: 100px;
+}
+.images-reletive__thre {
+	background-color: rgba(255, 251, 0, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+	top: 20px;
+	right: 20px;
+	z-index: 1;
+}
+.images-reletive__image3 {
+	width: 100px;
+	height: 100px;
+}
+.images-reletive__four {
+	background-color: rgba(255, 0, 128, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+	bottom: 20px;
+	left: 20px;
+}
+.images-reletive__image4 {
+	width: 100px;
+	height: 100px;
+}
+/*====================================================================position:absolute;==================================================================*/
+.absolute-main {
+	margin: 0px 0px 10px 0px;
+}
+.absolute-main *:last-child {
+	margin-bottom: 0px;
+}
+.absolute-main__text {
+	color: rgb(17, 146, 0);
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+	margin: 0px 0px 20px 0px;
+}
+.absolute-main__images {
+}
+.images-absolute {
+}
+.images-absolute__one {
+	background-color: rgba(0, 225, 255, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+}
+.images-absolute__image1 {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	width: 100px;
+	height: 100px;
+}
+.images-absolute__two {
+	background-color: rgba(0, 255, 55, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+}
+.images-absolute__image2 {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	width: 100px;
+	height: 100px;
+}
+.images-absolute__thre {
+	background-color: rgba(255, 251, 0, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: relative;
+}
+.images-absolute__image3 {
+	position: absolute;
+	top: 0;
+	left: 800px;
+	width: 100px;
+	height: 100px;
+}
+.images-absolute__four {
+	background-color: rgba(255, 0, 128, 0.733);
+	margin: 0px 0px 10px 0px;
+}
+.images-absolute__image4 {
+	width: 100px;
+	height: 100px;
+}
+/* осталось сделать значение stiky и список с псевдоэлементом с позиционированием этого псевдоэлемента*/
+/*=======================footer===============================================*/
+.footer {
+	background-color: rgb(133, 133, 133);
+	max-height: 200px;
+	overflow: scroll;
+}
+.footer *:last-child {
+	margin-bottom: 0px;
+}
+.footer____text {
+	color: rgb(17, 146, 0);
+	font-size: 25px;
+
+	text-decoration: underline;
+	margin: 0px 0px 20px 0px;
+}
+.footer____images {
+}
+.images-footer {
+}
+.images-footer__one {
+	background-color: rgba(0, 225, 255, 0.733);
+	margin: 0px 0px 10px 0px;
+	position: sticky;
+	top: 0px;
+}
+.images-footer__image1 {
+	width: 100px;
+	height: 100px;
+}
+.images-footer__two {
+	background-color: rgba(0, 255, 55, 0.733);
+	margin: 0px 0px 10px 0px;
+}
+.images-footer__image2 {
+	width: 100px;
+	height: 100px;
+}
+.images-footer__thre {
+	background-color: rgba(255, 251, 0, 0.733);
+	margin: 0px 0px 10px 0px;
+}
+.images-footer__image3 {
+	width: 100px;
+	height: 100px;
+}
+.images-footer__four {
+	background-color: rgba(255, 0, 128, 0.733);
+	margin: 0px 0px 10px 0px;
+}
+.images-footer__image4 {
+	width: 100px;
+	height: 100px;
+}
+._conteiner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*=================================list===================================================*/
+.list-main {
+}
+.list-main *:last-child {
+	margin-bottom: 0px;
+}
+.list-main li {
+	color: rgb(97, 0, 0);
+	font-size: 20px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 1.2;
+	position: relative;
+	padding: 0px 0px 0px 25px;
+	margin: 0px 0px 15px 0px;
+}
+.list-main li::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(../img/list.svg) 0 0 no-repeat;
+	position: absolute;
+	top: 4px;
+	left: 0px;
+}
+
+/*===================================================================figma-fitnes-trainer====================================================================================*/
+/* этот кусок сделал вообще ради эксперимента*/
+/*flex здесь использован просто для посторения обьектов в ряд. Я его подробно не учил, внимание на него пожалуйста не обращайте*/
+.figma {
+	/*padding просто для того что бы отлипли края*/
+	padding: 100px 0px;
+	font-family: "CircularStd", sans-serif;
+}
+._conteiner {
+}
+.figma__shell {
+	position: relative;
+}
+/*чето не дошло до меня как правильно вставить эти точки фоновые что бы текст их не двигал*/
+.figma__shell::before {
+	content: "";
+	width: 128px;
+	height: 184px;
+	display: block;
+	background: url(../img/dots.svg) 0 0 no-repeat;
+	position: absolute;
+	bottom: -296px;
+	left: -110px;
+}
+.row-figma__dots {
+	position: absolute;
+	bottom: -298px;
+	left: -111px;
+}
+.figma__background-yellow {
+	position: absolute;
+	top: 336px;
+	left: -111px;
+}
+.figma__title {
+	font-size: 65px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #313131;
+	padding: 0px 0px 0px 40px;
+	margin: 0px 0px 30px 0px;
+}
+.figma__sub-title {
+	max-width: 491px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #5f5f5f;
+	padding: 0px 0px 0px 40px;
+	margin: 0px 0px 75px 0px;
+}
+.figma__block {
+}
+
+.figma__box {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	margin: 0px 0px 75px 0px;
+}
+.box-figma {
+}
+.box-figma__images {
+}
+.box-figma__image {
+}
+.row-figma__border1 {
+	position: absolute;
+	top: 22px;
+	left: -25px;
+}
+.box-figma__text {
+	padding: 169px 0px 0px 0px;
+	margin: 0px 0px 0px 85px;
+}
+.box-figma__title {
+	font-size: 65px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #313131;
+	margin: 0px 0px 30px 0px;
+}
+.box-figma__sub-title {
+	max-width: 418px;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #5f5f5f;
+}
+.figma__row {
+}
+.row-figma {
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+.row-figma__text {
+	max-width: 509px;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #5f5f5f;
+}
+.row-figma__paragraph {
+	margin: 0px 0px 30px 0px;
+}
+.row-figma__text *:last-child {
+	margin: 0;
+}
+.row-figma__images {
+	position: relative;
+	position: absolute;
+	top: -196px;
+	right: -85px;
+}
+.row-figma__image {
+}
+.row-figma__border2 {
+	position: absolute;
+	top: -177px;
+	right: -109px;
+}
+/*этот блок просто для демонстрации position*/
+.block {
+	height: 500px;
+	background-color: rgba(0, 205, 219, 0.527);
+	color: #f5f5f5;
+	font-size: 90px;
+	text-align: center;
+	padding: 70px 0px 0px 0px;
+}
+/*===========================================*/
+/*===================================================================figma-doggi====================================================================================*/
+.doggie {
+	font-family: "Roboto", sans-serif;
+	color: #f5f5f5;
+	padding: 100px 0px;
+	position: relative;
+	top: -163px;
+	left: 0;
+}
+.doggie ._conteiner {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.doggie__box {
+	background: #5d62b5;
+	border-radius: 40px;
+	position: relative;
+}
+.doggie__content {
+	max-width: 846px;
+	height: 700px;
+	margin: 0 auto;
+	padding: 100px 0px 0px 0px;
+}
+.doggie__sub-title {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 35px;
+	margin: 0px 0px 33px 0px;
+	background: url(../img/mark.svg) 0 -1px no-repeat;
+}
+.doggie__title {
+	max-width: 583px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.1;
+	margin: 0px 0px 36px 0px;
+}
+.doggie_text {
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+.doggie__circles {
+	position: absolute;
+	top: -110px;
+	right: -79px;
+}
+.doggie__circuit {
+	position: absolute;
+	bottom: -141px;
+	left: 58px;
+}
+.doggie__images {
+	position: absolute;
+	bottom: -112px;
+	left: 90px;
+	z-index: 2;
+}
+.doggie__image {
+	border-radius: 40px;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}

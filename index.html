@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--подключаю шрифт из google fonts -->
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson-11</title>
+</head>
+
+<body>
+	<div class="wraper">
+		<header class="header">
+			<div class="header__fixed">
+				<a href="#" class="header__link">
+					Это header шапка котрой применино свойство position:fixed;
+					это я сделал для проверки самого свойста и для интересного эффекта шапки.
+				</a>
+			</div>
+			<div class="header__block">
+				Элемент якобы вырывается из кода и зависайт в воздухе. Фиксируется, то есть не скролится вместе с
+				содержимым. Он перестает влиять на остальные элементы. Добавление свойств left, top, right и bottom
+				изменяет позицию элемента и сдвигает его в ту или иную сторону относительно окна браузера.
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__static static-main">
+				<div class="static-main _conteiner">
+					<p class="static-main__text">
+						position: static;
+						Элементы отображаются как обычно. Использование свойств left, top, right, bottom и z-index не приводит
+						к каким-либо результатам.
+					</p>
+					<div class="static-main__images images-static">
+						<div class="images-static__one">
+							<picture>
+								<source class="images-static__image1" srcset="img/header.webp" type="image/webp">
+								<img class="images-static__image1" src="img/header.jpg" alt="мальчик говорит с мужчиной">
+							</picture>
+						</div>
+						<div class="images-static__two">
+							<picture>
+								<source class="images-static__image2" srcset="img/smile.webp" type="image/webp">
+								<img class="images-static__image2" src="img/smile.jpg" alt="человек улыбается">
+							</picture>
+						</div>
+						<div class="images-static__thre">
+							<picture>
+								<source class="images-static__image3" srcset="img/thrive.webp" type="image/webp">
+								<img class="images-static__image3" src="img/thrive.jpg" alt="женщина тянет руки вверх">
+							</picture>
+						</div>
+						<div class="images-static__four">
+							<picture>
+								<source class="images-static__image4" srcset="img/footer.webp" type="image/webp">
+								<img class="images-static__image4" src="img/footer.jpg" alt="женщина с цветком на голове">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__reletive reletive-main">
+				<div class="reletive-main _conteiner">
+					<div class="reletive-main__text">
+						Положение элемента устанавливается относительно его исходного положения в коде. Добавление свойств
+						left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от
+						первоначального расположения.
+						Каждый элемент может находиться как ниже, так и выше других объектов веб-страницы, их размещением по
+						z-оси и управляет z-index. Это свойство работает только для элементов, у которых значение position
+						задано как absolute, fixed или relative.
+					</div>
+					<div class="reletive-main__images images-reletive">
+						<div class="images-reletive__one">
+							<picture>
+								<source class="images-reletive__image1" srcset="img/header.webp" type="image/webp">
+								<img class="images-reletive__image1" src="img/header.jpg" alt="мальчик говорит с мужчиной">
+							</picture>
+						</div>
+						<div class="images-reletive__two">
+							<picture>
+								<source class="images-reletive__image2" srcset="img/smile.webp" type="image/webp">
+								<img class="images-reletive__image2" src="img/smile.jpg" alt="человек улыбается">
+							</picture>
+						</div>
+						<div class="images-reletive__thre">
+							<picture>
+								<source class="images-reletive__image3" srcset="img/thrive.webp" type="image/webp">
+								<img class="images-reletive__image3" src="img/thrive.jpg" alt="женщина тянет руки вверх">
+							</picture>
+						</div>
+						<div class="images-reletive__four">
+							<picture>
+								<source class="images-reletive__image4" srcset="img/footer.webp" type="image/webp">
+								<img class="images-reletive__image4" src="img/footer.jpg" alt="женщина с цветком на голове">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__absolute absolute-main">
+				<div class="absolute-main _conteiner">
+					<div class="absolute-main__text">
+						Элемент якобы вырывается из кода и зависайт в воздухе. Он перестает влиять на остальные элементы.
+						Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную
+						сторону относительно родителя у колого задан параметр position: relative; Если такого нет то элемент
+						позиционируется относительно окна браузера.
+					</div>
+					<div class="absolute-main__images images-absolute">
+						<div class="images-absolute__one">
+							<picture>
+								<source class="images-absolute__image1" srcset="img/header.webp" type="image/webp">
+								<img class="images-absolute__image1" src="img/header.jpg" alt="мальчик говорит с мужчиной">
+							</picture>
+						</div>
+						<div class="images-absolute__two">
+							<picture>
+								<source class="images-absolute__image2" srcset="img/smile.webp" type="image/webp">
+								<img class="images-absolute__image2" src="img/smile.jpg" alt="человек улыбается">
+							</picture>
+						</div>
+						<div class="images-absolute__thre">
+							<picture>
+								<source class="images-absolute__image3" srcset="img/thrive.webp" type="image/webp">
+								<img class="images-absolute__image3" src="img/thrive.jpg" alt="женщина тянет руки вверх">
+							</picture>
+						</div>
+						<div class="images-absolute__four">
+							<picture>
+								<source class="images-absolute__image4" srcset="img/footer.webp" type="image/webp">
+								<img class="images-absolute__image4" src="img/footer.jpg" alt="женщина с цветком на голове">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="main__list list-main">
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur sapiente
+					aliquam maxime pariatur, dignissimos doloremque eaque quos dolore, officiis animi officia. Esse molestiae
+					ex odit repellendus, aliquam dolorem tempora eos.
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur sapiente
+					aliquam maxime pariatur, dignissimos doloremque eaque quos dolore, officiis animi officia. Esse molestiae
+					ex odit repellendus, aliquam dolorem tempora eos.
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur sapiente
+					aliquam maxime pariatur, dignissimos doloremque eaque quos dolore, officiis animi officia. Esse molestiae
+					ex odit repellendus, aliquam dolorem tempora eos.
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur sapiente
+					aliquam maxime pariatur, dignissimos doloremque eaque quos dolore, officiis animi officia. Esse molestiae
+					ex odit repellendus, aliquam dolorem tempora eos.
+				</li>
+				<li class="list-main__item">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit
+				</li>
+			</ul>
+		</main>
+		<footer class="footer">
+			<div class="footer _conteiner">
+				<div class="footer__sticky">
+					<div class="footer____text">
+						Это гибридное сочетание значений static и fixed. Изначально єлемент ведет себя как static но после
+						того как скролл доходит до его границы он становиться fixed и прилипает к указанной позиции top или
+						bottom.
+					</div>
+					<div class="footer____images images-footer">
+						<div class="images-footer__one">
+							<picture>
+								<source class="images-footer__image1" srcset="img/header.webp" type="image/webp">
+								<img class="images-footer__image1" src="img/header.jpg" alt="мальчик говорит с мужчиной">
+							</picture>
+						</div>
+						<div class="images-footer__two">
+							<picture>
+								<source class="images-footer__image2" srcset="img/smile.webp" type="image/webp">
+								<img class="images-footer__image2" src="img/smile.jpg" alt="человек улыбается">
+							</picture>
+						</div>
+						<div class="images-footer__thre">
+							<picture>
+								<source class="images-footer__image3" srcset="img/thrive.webp" type="image/webp">
+								<img class="images-footer__image3" src="img/thrive.jpg" alt="женщина тянет руки вверх">
+							</picture>
+						</div>
+						<div class="images-footer__four">
+							<picture>
+								<source class="images-footer__image4" srcset="img/footer.webp" type="image/webp">
+								<img class="images-footer__image4" src="img/footer.jpg" alt="женщина с цветком на голове">
+							</picture>
+						</div>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum laborum pariatur libero
+						officia sit quas ex. Laudantium vitae nulla tempore temporibus delectus perspiciatis facere debitis
+						molestias fugit ipsam eum cumque dignissimos ad quisquam eligendi, et illum id. Provident quod dolor
+						quam dolorem. Vel aut, distinctio suscipit accusantium tempore consectetur, omnis aspernatur minima
+						placeat iusto, consequatur harum ab? Ex esse itaque officiis voluptates a odit facilis incidunt
+						similique sint corporis amet aliquam sapiente temporibus unde, ipsam optio nisi, quasi fugiat laborum
+						dolorem ipsa nesciunt! Aliquid ratione adipisci, reiciendis consectetur laboriosam quisquam esse,
+						corrupti culpa nemo consequatur officiis ducimus aspernatur quis nisi pariatur voluptatem porro
+						explicabo? Accusantium molestias, optio totam dolorem illo non ea, itaque libero sit omnis iure
+						voluptate, ad maxime qui delectus error veniam hic accusamus. Soluta obcaecati illum, ipsum
+						necessitatibus, nulla aut impedit porro provident odit sapiente ex ipsa fuga blanditiis molestias quam
+						iure officiis placeat corporis incidunt itaque modi. Reiciendis ullam harum ducimus dolorem iste
+						exercitationem, laboriosam cum repellat excepturi aut minima non totam! Laudantium quisquam fugit
+						aperiam illum aliquid. Iure sed debitis illum officiis libero vero facilis in, nam fugiat? Eos quam
+						iste veniam numquam recusandae sapiente ut earum aperiam nemo tenetur saepe distinctio harum soluta
+						molestiae error ullam omnis vero, porro voluptatibus reiciendis, expedita rerum deleniti vel
+						provident! Ut cum eveniet soluta, et neque enim, eos quisquam animi officia, corporis blanditiis
+						dolorum ratione quo pariatur eaque? Dolor ea vitae, accusamus possimus eum, eos maiores dolore
+						veritatis cupiditate quaerat tempora! Excepturi eaque omnis rem tempora, nulla consectetur, tempore
+						repellat ut nobis laudantium sed, quas illo. Repellendus nemo quae doloribus dolorum fuga eveniet aut
+						at nihil, asperiores consequatur neque commodi, cumque aperiam maxime, dolore quibusdam obcaecati
+						adipisci ipsam dolores aliquam veritatis cum nesciunt? Nihil libero sequi, commodi magnam tempore,
+						porro quae distinctio rem repudiandae culpa atque ratione fugiat in dolorem beatae animi fugit optio
+						velit ipsam? Quo eligendi error numquam eius minima quas maiores qui fugit animi, amet laudantium
+						quasi reiciendis doloribus nihil quod non velit enim corporis inventore ipsa consectetur deserunt
+						tempora optio. Deleniti ratione hic, itaque natus odit reiciendis officiis voluptatum ut dolor et
+						repellat fugiat placeat molestias labore, adipisci tempora consectetur quas asperiores aliquam.
+						Voluptatum unde alias recusandae, assumenda eos harum hic? Pariatur eius nobis, non amet illum
+						accusantium cumque aut quas dolorem eveniet beatae sed veritatis accusamus! Perferendis ducimus optio
+						quia fuga similique atque porro rerum itaque hic! Ex sapiente molestiae maxime non doloribus quia
+						quasi labore, consequuntur ea iure assumenda voluptate, veritatis tempora sunt quod voluptates debitis
+						fugit inventore dignissimos vel in maiores reprehenderit. Facilis, sequi modi. Ut ab officia
+						consectetur modi reprehenderit vero voluptatum itaque, vel vitae ea, autem quas dicta unde similique
+						adipisci sit fuga voluptatibus commodi beatae, aliquam repellendus nemo minus consequuntur!
+						Praesentium sed tenetur nam veritatis nobis, error provident eveniet laboriosam sint reiciendis fugit
+						natus ex sunt, laborum animi facere impedit sapiente deserunt, reprehenderit delectus? Ab, atque,
+						architecto quos voluptates doloremque exercitationem numquam quas nam illum quis nostrum dolorum
+						magnam incidunt odit facere non iusto? Omnis sequi facere fuga architecto fugiat veniam nostrum
+						voluptas error ut corporis et amet odio consectetur cumque accusamus incidunt optio est hic, dolor,
+						saepe nisi animi eius repudiandae! Optio corrupti excepturi saepe id repellendus dolorem recusandae?
+						Fuga enim iste asperiores quibusdam consequuntur, vel voluptate dignissimos exercitationem porro aut
+						eius fugiat temporibus odio atque, earum corporis saepe neque non ipsa illum, blanditiis dicta quis.
+						Delectus eos exercitationem facere fugit corrupti, nam deleniti beatae vitae ab sunt dignissimos
+						reiciendis. Corrupti unde quas, maiores ab eius autem dolore commodi nobis esse illum ducimus modi
+						perspiciatis et cupiditate, eaque molestiae quisquam asperiores vel tempore vero, officiis at numquam.
+						Recusandae ducimus quia dolorem beatae ipsum odio ullam atque deserunt dolore, veritatis nemo qui
+						inventore minus. Iure quis vitae reiciendis, delectus inventore minus optio maxime fugit hic
+						laboriosam blanditiis repudiandae modi omnis non corrupti dolore error nobis obcaecati labore
+						consectetur quia ducimus dolor. Eum excepturi, aliquam asperiores voluptate soluta debitis quisquam.
+						Tempore dolore consequuntur eligendi, nesciunt incidunt exercitationem voluptatem nulla soluta, amet
+						mollitia ipsam deserunt fuga blanditiis consequatur iste quae officiis, ex asperiores eaque iusto.
+						Mollitia repellendus fugit, tempora nam at dolorum eum similique reprehenderit reiciendis, consequatur
+						aliquid iusto doloribus commodi expedita nostrum illo id quidem, quas nisi odio ullam asperiores!
+						Deleniti illum veniam aperiam quisquam numquam! Vel aperiam modi molestiae, itaque eos qui at
+						repellendus iusto laborum rerum nisi tenetur maiores eaque voluptatum blanditiis quasi harum nulla
+						veniam quod! Cupiditate fuga recusandae asperiores, beatae corporis sunt ratione blanditiis totam. Eos
+						necessitatibus accusantium, facere eius blanditiis incidunt nam inventore nobis culpa! Labore,
+						eligendi. Maiores cumque nesciunt delectus earum, animi culpa ipsa illo, dolore deleniti quod, sint
+						ratione? Accusantium esse itaque totam quas iure repellat perspiciatis assumenda veniam soluta,
+						nostrum ratione? Dolore sequi architecto inventore ratione deserunt porro deleniti corrupti
+						perferendis hic earum sint nisi, sunt aliquam mollitia in explicabo sed esse nostrum voluptates veniam
+						eius, commodi quasi sit! Culpa, dolor adipisci beatae quam illum quaerat porro tempore tenetur atque
+						earum fuga sed sit aut voluptatum eum reiciendis labore officia molestias sapiente harum. Quo quis sit
+						facere voluptatum mollitia magnam iure voluptatibus error ipsum. Commodi, magni dolor fugit fuga odio
+						explicabo nostrum cum enim debitis aliquam laboriosam doloribus alias nobis illum quia. Soluta
+						molestiae sit eligendi id deserunt facere non quidem expedita debitis qui sunt mollitia neque,
+						recusandae a libero molestias magni doloribus veritatis animi culpa. Dolor quaerat eius repudiandae
+						eveniet veritatis adipisci autem nobis, incidunt hic, veniam alias quas architecto explicabo tempora
+						deleniti eligendi beatae tempore necessitatibus magnam error pariatur harum at? Quaerat possimus
+						incidunt illo aspernatur tempora! Accusantium consectetur cum maxime voluptate similique corrupti
+						aperiam quia perspiciatis nulla, officiis explicabo delectus provident id fugit rerum tempora quaerat
+						dolore. Suscipit eligendi iste in vero a officia accusantium iure veniam temporibus ad soluta enim
+						rerum, delectus commodi quos autem rem officiis laboriosam! Mollitia esse, at porro pariatur,
+						voluptatibus est, rem quae adipisci in nemo a eius numquam ut tenetur. Cumque amet veritatis obcaecati
+						animi nemo, numquam iusto repellendus atque. Eos dolorem tempore soluta quae. Molestiae nihil
+						reiciendis doloribus dolor cumque.
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="figma">
+			<div class="figma _conteiner">
+				<div class="figma__shell">
+
+					<img class="figma__background-yellow" src="img/background-yellow.svg" alt="фоновое изображение">
+					<h3 class="figma__title">
+						About Us
+					</h3>
+					<div class="figma__sub-title">
+						Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret
+						repair to desire he esteem.
+					</div>
+					<div class="figma__block">
+
+						<div class="figma__box box-figma">
+							<div class="box-figma__images">
+								<picture>
+									<source class="box-figma__image" srcset="img/figma1.webp" type="image/webp">
+									<img class="box-figma__image" src="img/figma1.png" alt="женщина сидит">
+								</picture>
+							</div>
+							<img src="img/figma-border1.svg" alt="декор" class="row-figma__border1">
+							<div class="box-figma__text">
+								<h3 class="box-figma__title">What we do?</h3>
+								<div class="box-figma__sub-title">
+									Why sir end believe uncivil respect. Always get adieus nature day course for common. My
+									little
+									garret repair to desire he esteem.
+								</div>
+							</div>
+						</div>
+						<div class="figma__row row-figma">
+							<div class="row-figma__text">
+								<p class="row-figma__paragraph">
+									Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively
+									income.
+									The
+									expense windows adapted sir. Wrong widen drawn ample eat off doors money. Offending belonging
+									promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met
+									humoured
+									sir breeding her. Six curiosity day assurance bed necessary.
+								</p>
+								<p class="row-figma__paragraph">
+									And produce say the ten moments parties. Simple innate summer fat appear basket his desire
+									joy.
+									Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable
+									oh
+									expression is. Yet preference connection unpleasant yet melancholy but end appearance. And
+									excellence partiality estimating terminated day everything.
+								</p>
+								<p class="row-figma__paragraph">
+									Warmly little before cousin sussex entire men set. Blessing it ladyship on sensible judgment
+									settling outweigh. Worse linen an of civil jokes leave offer. Parties all clothes removal
+									cheered
+									calling prudent her. And residence for met the estimable disposing. Mean if he they been no
+									hold
+									mr. Is at much do made took held help. Latter person am secure of estate genius at.
+								</p>
+							</div>
+							<div class="row-figma__images">
+								<picture>
+									<source class="row-figma__image" srcset="img/figma2.webp" type="image/webp">
+									<img class="row-figma__image" src="img/figma2.png" alt="женщина заимается спортом">
+								</picture>
+							</div>
+							<img src="img/figma-border2.svg" alt="декор" class="row-figma__border2">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--'этот блок просто для дмонстрации позиционировнаия'-->
+		<div class="block">
+			I block I block I block I block I block I block I block I block I block I block I block
+		</div>
+		<div class="doggie">
+			<div class="doggie _conteiner">
+				<div class="doggie__box">
+					<div class="doggie__content">
+						<div class="doggie__sub-title">
+							Who we are
+						</div>
+						<h3 class="doggie__title">
+							Nemo enim ipsam voluptatem quia voluptas in proident
+						</h3>
+						<div class="doggie_text">
+							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+							aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+							esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+							pariatur.
+						</div>
+					</div>
+					<img class="doggie__circles" src="img/circles.svg" alt="фоновое пятно">
+					<img class="doggie__circuit" src="img/circuit.svg" alt="фоновые точки">
+					<div class="doggie__images">
+						<picture>
+							<source class="doggie__image" srcset="img/doggie.webp" type="image/webp">
+							<img class="doggie__image" src="img/doggie.jpg" alt="собака">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>
